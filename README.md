@@ -11,7 +11,7 @@ Then switch back to the feature branch to do the rebase:
 
 ```
 git checkout feature
-git rebase master
+git rebase main
 ```
 \
 If there are conflicts that need to be resolved, git will show which files have merge conflicts. Resolve the conflicts and stage the files using `git add`. Then continue the rebase with `git rebase --continue`.
@@ -42,6 +42,12 @@ git rebase --abort
 
 ```
 git reflog
+```
+
+You will see a history of local changes to the repository. Look for the last good commit before the rebase and copy the commit id (SHA). You can then use `git reset`:
+
+```
+git reset --hard <last good SHA>
 ```
 
 ## Interactive Rebase
