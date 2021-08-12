@@ -20,6 +20,13 @@ If there are conflicts that need to be resolved, git will show which files have 
 git add .
 git rebase --continue
 ```
+
+*NOTE:* If the commit that creates a conflict is no longer needed, it can be dropped by using the `--skip` option instead:
+
+```
+git rebase --skip
+```
+
 \
 As git applies each commit to the tip of the main branch, there is a chance for a conflict so you may need to repeat the previous step multiple times.
 
@@ -52,6 +59,11 @@ git reset --hard <last good SHA>
 
 ## Interactive Rebase
 
+Git rebase can also be used in interactive mode to modify commits in a range. Commits can be dropped or squashed and commit messages can be modified.
+
+```
+git rebase -i HEAD~<number of commits>
+```
 
 ## References
 
