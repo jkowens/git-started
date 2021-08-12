@@ -1,6 +1,6 @@
-# Intro to git rebase
+# Intro to Git Rebase
 
-Before doing a rebase it is an essential first step to checkout the main (master, dev, etc) branch and pull down the latest changes:
+Before doing a rebase, an essential first step is to checkout the main (master, dev, etc) branch and pull down the latest changes:
 
 ```
 git checkout main
@@ -51,3 +51,11 @@ git reset --hard <last good SHA>
 ```
 
 ## Interactive Rebase
+
+
+## References
+
+* [Git Rebase](https://git-scm.com/docs/git-rebase)
+* [Merging vs Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+* [Demystifying Git Rebase](https://www.thinktecture.com/en/tools/demystifying-git-rebase)
+* [Always Squash and Rebase Your Git Commits](https://blog.carbonfive.com/always-squash-and-rebase-your-git-commits)
