@@ -59,11 +59,21 @@ git reset --hard <last good SHA>
 
 ## Interactive Rebase
 
-Git rebase can also be used in interactive mode to modify commits in a range. Commits can be dropped or squashed and commit messages can be modified.
+Git rebase can also be used in interactive mode to modify commits in a range. Commits can be dropped or squashed and commit messages can be modified. As developers we like to commit frequently, but when it comes time to merge our feature into the main branch, it can be beneficial to squash our commits into a few or even a single commit.
 
 ```
-git rebase -i HEAD~<number of commits>
+git rebase --interactive HEAD~<number of commits>
 ```
+
+## Pushing to Github
+
+If a feature branch has been pushed to Github and then you do a rebase, you will need to use a force push since the commit history has changed:
+
+```
+git push origin feature --force
+```
+
+*NOTE:* Force pushing to your own feature branch is safe, but if force pushing to master or a branch that is shared it should be considered dangerous.
 
 ## References
 
