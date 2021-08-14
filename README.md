@@ -80,4 +80,5 @@ git push origin feature --force
 * [Git Rebase](https://git-scm.com/docs/git-rebase)
 * [Merging vs Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 * [Demystifying Git Rebase](https://www.thinktecture.com/en/tools/demystifying-git-rebase)
+* [Interactive Rebase](https://www.thinktecture.com/en/tools/git-interactive-rebase)
 * [Always Squash and Rebase Your Git Commits](https://blog.carbonfive.com/always-squash-and-rebase-your-git-commits)
