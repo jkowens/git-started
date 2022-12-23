@@ -13,6 +13,13 @@ Then switch back to the feature branch to do the rebase:
 git checkout feature
 git rebase main
 ```
+
+Alternatively, if on the feature branch, a shortcut is to do a git fetch instead of switching to the main branch.
+
+```
+git fetch
+git rebase main
+```
 \
 If there are conflicts that need to be resolved, git will show which files have merge conflicts. Resolve the conflicts and stage the files using `git add`. Then continue the rebase with `git rebase --continue`.
 
